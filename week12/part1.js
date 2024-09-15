@@ -66,4 +66,4 @@ task1.displayDeatails();
 
 task1.toggleCompleted();
 console.log('|\t New task detail \t|')
-task1.displayDeatails()
+task1.displayDeatails();
