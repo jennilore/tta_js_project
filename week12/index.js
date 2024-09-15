@@ -76,9 +76,14 @@ function creatPersonalTask(title, description, urgent){
     }
 }
 
+function displayTaskDeatails(task){
+    task.displayDeatails();
+}
+
 console.log("*.................... Personal Related Task........................*");
 let task1 = creatTask("buy milk", "get milk, bread and buy eggs", "go shopping");
-task1.displayDeatails();
+// task1.displayDeatails();
+displayDeatails(task1);
 console.log("*...........................................*");
 
 console.log("*...................... Work Related Task .........................*");
@@ -100,22 +105,3 @@ task3.toggleComplted();
 console.log("*...........................................*");
 task3.displayDeatails();
 console.log("*...........................................*");
-
-
-// normal task \\
-
-// task1.toggleCompleted();
-// console.log('|\t New task detail \t|');
-// task1.displayDeatails();
-
-// task1.updateTitle("buy groceries - 1");
-// console.log('|\t Updated task detail \t|');
-// task1.displayDeatails();
-
-// task1 = updateDescription("1. buy milk", "get milk, bread and buy eggs"); 
-// console.log('|\t Updated task detail \t|');
-// task1.displayDeatails();
-
-// task1 = updateCategory("shopping - 1"); 
-// console.log('|\t Updated task detail \t|');
-// task1.displayDeatails();
