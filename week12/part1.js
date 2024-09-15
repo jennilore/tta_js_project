@@ -1,7 +1,8 @@
 class task{
-    constructor(title,description){
+    constructor(title, description, category){
         this.title = title;
         this.description = description;
+        this.category = category;
         this.completed = false;
     }
     
@@ -16,21 +17,25 @@ class task{
 
     displayDeatails(){
         console.log("*...........................................*");
+        console.log(`\t categoty; ${this.category} `)
         console.log(`\t task; ${this.title}`)
         console.log(`\t description; ${this.description}`)
         // console.log(`\t completed; ${this.completed}`)
-        if (this.completed){
-            console.log("\t task is completed");
-        }
-        else{
-            console.log("\t task is not complteted");
-        }
+        // if (this.completed){
+        //     console.log("\t task is completed");
+        // }
+        // else{
+        //     console.log("\t task is not complteted");
+        // }
+
+        
+
         console.log("*............................................*")
     }
 }
 
 
-let task1 = new task ("get groceries","buy milk, bread, egg and jam in the store");
+let task1 = new task ("get groceries","buy milk, bread, egg and jam in the store", "book shoppping");
 
 
 task1.displayDeatails();
