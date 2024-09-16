@@ -83,12 +83,13 @@ function displayTaskDeatails(task){
 console.log("*.................... Personal Related Task........................*");
 let task1 = creatTask("buy milk", "get milk, bread and buy eggs", "go shopping");
 // task1.displayDeatails();
-displayDeatails(task1);
+displaytaskDeatails(task1);
 console.log("*...........................................*");
 
 console.log("*...................... Work Related Task .........................*");
 let task2 = creatWorkTask("complete report", "finish the report before the meeting", "sunday 12pm");
-task2.displayDeatails();
+// task2.displayDeatails();
+displayTaskDeatails(task2)
 console.log("*...........................................*");
 
 task2.toggleComplted();
@@ -98,10 +99,22 @@ console.log("*...........................................*");
 
 console.log("*........................... Personal Task .............................*");
 let task3 = creatPersonalTask("call mom", "call the uber", "take my medecines");
-task3.displayDeatails();
+// task3.displayDeatails();
+displayTaskDeatails(task3)
 console.log("*...........................................*");
 
 task3.toggleComplted();
 console.log("*...........................................*");
 task3.displayDeatails();
 console.log("*...........................................*");
+
+let task = (task1, task2, task3);
+
+
+console.log("all task");
+console.log("*..........................................................*");
+task.forEach(task => {
+    // task.displayDeatails();
+    displayTaskDeatails(task);
+    console.log("\n")
+});
